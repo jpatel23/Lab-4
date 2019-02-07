@@ -141,7 +141,13 @@ public class Animal
         // Check that all fields match (color, name, weight, height):
         
         // TODO: finish this...
+        boolean check = false;
         
+        if (name.equals(otherAni.getName()) && color.equals(otherAni.getColor()) && weight == otherAni.getWeight() && height == otherAni.getHeight()) {
+        	check = true;
+        }
+   
         /* return TODO; */
+        return check;
     }
 }
