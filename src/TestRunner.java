@@ -18,8 +18,8 @@ public class TestRunner
 	 * THIS IS ONLY PART OF THIS CLASS THAT YOU SHOULD MODIFY.
 	 */
 	private static String[] testClasses = {
-			"AnimalTest",
-			//"ZooTest",
+			//"AnimalTest",
+			"ZooTest",
 			//"EquipmentTest"
 	};
 
