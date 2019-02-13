@@ -1,26 +1,31 @@
 public class EquipmentTest {
 	 /**
-     * Test the empty Animal constructor and the getters
+     * Test the empty Equipment constructor and the getters
      */
-    public void emptyConstructorTest() throws AssertException
+   /* public void emptyConstructorTest() throws AssertException
     {
         // Use the default constructor
-        Equipment equip = new Equipment();
+        Equipment equip = new Equipment(null);
 
-        // The name should be "noname", color "unknown", height and weight 0.
-        Assert.assertEquals("unknown", animal.getColor());
-        Assert.assertEquals("noname", animal.getName());
-        Assert.assertEquals(0, animal.getHeight(), 0.01);
-        Assert.assertEquals(0, animal.getWeight(), 0.01);
-    }
+    
+        Assert.assertEquals("", equip.getName());
+        Assert.assertEquals(0, equip.getCount());
+        Assert.assertEquals(0, equip.getTotalWeight());
+        Assert.assertEquals(0, equip.getTotalPrice());
+        Assert.assertEquals("", equip.getDescription());
+    } */
 
     // TODO: test full constructor, getters, and toString
     	public void fullConstructorTest() throws AssertException
     	{
-    		Animal full = new Animal("brown", "dog", 1.0, 1.0);
-    		Assert.assertEquals("brown", full.getColor());
-    		Assert.assertEquals("dog", full.getName());
-    		Assert.assertEquals(1.0, full.getWeight());
-    		Assert.assertEquals(1.0, full.getHeight());
+    		Equipment full = new Equipment("batman/6,4.0,6.6,utility belt");
+    		Assert.assertEquals("batman", full.getName());
+            Assert.assertEquals(6, full.getCount());
+            Assert.assertEquals(4.0, full.getTotalWeight());
+            Assert.assertEquals(6.6, full.getTotalPrice());
+            Assert.assertEquals("utility belt", full.getDescription());
+            
+            Assert.assertEquals("Name: batman, Number: 6, Weight: 4.00 lbs, Price: $6.60 - utility belt", full.toString());
+  
     	}
 }
